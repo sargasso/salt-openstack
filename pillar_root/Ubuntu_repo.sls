@@ -4,5 +4,5 @@ pkgrepo:
     - "ubuntu-cloud-keyring"
   repos:
     Juno-Cloud:
-      name: "deb http://ubuntu-cloud.archive.canonical.com/ubuntu trusty-updates/icehouse main"
-      file: "/etc/apt/sources.list.d/cloudarchive-icehouse.list"
+      name: "deb http://ubuntu-cloud.archive.canonical.com/ubuntu trusty-updates/juno main"
+      file: "/etc/apt/sources.list.d/cloudarchive-juno.list"

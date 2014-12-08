@@ -3,12 +3,12 @@ pkgrepo:
     - "gplhost-archive-keyring"
   repos:
     Juno-Cloud:
-      name: "deb http://archive.gplhost.com/debian icehouse main"
-      file: "/etc/apt/sources.list.d/gplhost-icehouse.list"
+      name: "deb http://archive.gplhost.com/debian juno main"
+      file: "/etc/apt/sources.list.d/gplhost-juno.list"
       human_name: "GPLHost Juno packages"
     Juno-Cloud-backports:
-      name: "deb http://archive.gplhost.com/debian icehouse-backports main"
-      file: "/etc/apt/sources.list.d/gplhost-icehouse.list"
+      name: "deb http://archive.gplhost.com/debian juno-backports main"
+      file: "/etc/apt/sources.list.d/gplhost-juno.list"
       human_name: "GPLHost Juno Backports packages"
   post_repo_additions:
     - "python-argparse"
