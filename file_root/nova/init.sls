@@ -132,7 +132,7 @@ nova-conf:
         DEFAULT: 
           auth_strategy: "keystone"
           rabbit_host: "{{ get_candidate('queue.%s' % salt['pillar.get']('queue_engine', default='rabbit')) }}"
-          my_ip: "{{ grains['id'] }}"
+          my_ip: "{{ pillar['hosts'][grains['id']] }}"
           vncserver_listen: "{{ get_candidate('nova') }}"
           vncserver_proxyclient_address: "{{ get_candidate('nova') }}"
           rpc_backend: "{{ pillar['queue_engine'] }}"
