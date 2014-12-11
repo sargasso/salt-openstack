@@ -65,10 +65,10 @@ nova-conf-compute:
         DEFAULT: 
           vnc_enabled: True
           rabbit_host: "{{ get_candidate('queue.%s' % salt['pillar.get']('queue_engine', default='rabbit')) }}"
-          my_ip: {{ grains['id'] }}
+          my_ip: {{ pillar['hosts'][grains['id']] }}
           vncserver_listen: 0.0.0.0
           glance_host: {{ get_candidate('glance') }}
-          vncserver_proxyclient_address: {{ grains['id'] }}
+          vncserver_proxyclient_address: {{ pillar['hosts'][grains['id']] }}
           rpc_backend: nova.rpc.impl_kombu
           novncproxy_base_url: http://{{ get_candidate('nova') }}:6080/vnc_auto.html
           auth_strategy: keystone
