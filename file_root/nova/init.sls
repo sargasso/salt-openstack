@@ -132,9 +132,9 @@ nova-conf:
         DEFAULT: 
           auth_strategy: "keystone"
           rabbit_host: "{{ get_candidate('queue.%s' % salt['pillar.get']('queue_engine', default='rabbit')) }}"
-          my_ip: "{{ grains['id'] }}"
-          vncserver_listen: "{{ get_candidate('nova') }}"
-          vncserver_proxyclient_address: "{{ get_candidate('nova') }}"
+          my_ip: "{{ pillar['hosts'][grains['id']] }}"
+          vncserver_listen: "{{ pillar['hosts'][get_candidate('nova')] }}"
+          vncserver_proxyclient_address: "{{ pillar['hosts'][get_candidate('nova')] }}"
           rpc_backend: "{{ pillar['queue_engine'] }}"
           network_api_class: "nova.network.neutronv2.api.API"
           neutron_url: "http://{{ get_candidate('neutron') }}:9696"

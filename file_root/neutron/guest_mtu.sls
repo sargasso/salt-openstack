@@ -37,7 +37,7 @@ dnsmasq-conf:
     - options_present
     - name: "/etc/neutron/dnsmasq-neutron.conf"
     - sections: 
-        DEFAULT: 
-          dhcp-options-force: "26,1454"
+        DEFAULT_IMPLICIT: 
+          dhcp-option-force: "26,1454"
     - require: 
       - ini: neutron-dhcp-agent-config-mtu
