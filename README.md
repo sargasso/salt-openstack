@@ -1,3 +1,10 @@
+Watch this space for
+===================
+1. Neutron state and execution module, pilllar and formulas for creation of initial networks.
+2. Pillar and formulas for creation of instances.
+3. More consistent with official salt modules
+4. New and more readable network_resources.sls
+
 About the project
 =================
 The [project](https://github.com/Akilesh1597/salt-openstack/ "Openstack-Automation") gives you a working OpenStack cluster in a mater of minutes. We do this using [saltstack](http://docs.saltstack.com/ "Saltstack"). There is almost no coding involved and it can be easily maintained. Above all it is as easy as talking to your servers and asking them to configure themselves. 
@@ -26,10 +33,6 @@ What is New
 9. 'yaml' will be default format for sls files. This is done as maintaining sls files across format is causing mismatches and errors. Further 'json' does not go well with 'jinja' templating(formulas end up less readable).
 10. 'cluster_ops' salt module has been removed. Its functionality has been achieved using 'jinja macros', in an attempt to remove any dependencies that are not available in saltstack's list of modules.
 
-Yet to Arrive
-=============
-1. Neutron state and execution module, pilllar and formulas for creation of initial networks.
-2. Pillar and formulas for creation of instances.
 
 Getting started
 ===============
