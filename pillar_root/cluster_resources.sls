@@ -4,13 +4,13 @@ roles:
   - "storage"
   - "compute"
 compute: 
-  - "openstack.icehouse"
+  - "openstack.helios"
 controller: 
-  - "openstack.icehouse"
+  - "openstack.ixchel"
 network: 
-  - "openstack.icehouse"
+  - "openstack.ixchel"
 storage:
-  - "openstack.icehouse"
+  - "openstack.ixchel"
 sls: 
   controller: 
     - "mysql"
