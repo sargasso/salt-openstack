@@ -4,13 +4,13 @@ roles:
   - "storage"
   - "compute"
 compute: 
-  - "openstack.juno"
+  - "helios.juno"
 controller: 
-  - "openstack.juno"
+  - "ixchel.juno"
 network: 
-  - "openstack.juno"
+  - "ixchel.juno"
 storage:
-  - "openstack.juno"
+  - "ixchel.juno"
 sls: 
   controller: 
     - "mysql"

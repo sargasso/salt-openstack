@@ -14,6 +14,6 @@ cluster_type: juno
 
 #Hosts and their ip addresses
 hosts: 
-  openstack.juno: 10.8.27.13
-
+  ixchel.juno: 10.1.10.10
+  helios.juno: 10.1.10.12
 
